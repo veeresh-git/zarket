@@ -1,0 +1,78 @@
+.Dishes_container {
+  width: 100%;
+  .header_container {
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    .iconback {
+      font-size: 20px;
+    }
+    .resto_title {
+      font-size: 16px;
+      font-weight: 600;
+    }
+    .cart_holder {
+      position: relative;
+      .cartcount {
+        right: -5px;
+        top: -20px;
+      }
+      .iconcart {
+        font-size: 25px;
+      }
+    }
+  }
+  .tabs_conatiner {
+    padding: 15px;
+    width: 100%;
+    .ant-tabs-tab-active {
+      color: red;
+    }
+    .dish_card {
+      display: flex;
+      border-bottom: 1px solid gray;
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+      .left_part {
+        width: 70%;
+        padding-right: 10px;
+        .name {
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .calories {
+            font-size: 14px;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+        }
+        .description {
+            margin: 10px 0px;
+        }
+        .buttons {
+          background-color: green;
+          width: 100px;
+          border-radius: 15px;
+          padding: 8px;
+          color: white;
+          padding-left: 15px;
+          display: flex;
+          justify-content: space-between;
+          padding-right: 15px;
+          align-items: center;
+          cursor: pointer;
+        }
+        .customize {
+          color: red;
+        }
+      }
+      .right_part {
+        width: 30%;
+        .dishImage {
+          width: 100%;
+          max-height: 100px;
+        }
+      }
+    }
+  }
+}
